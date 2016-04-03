@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Projects</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="dvLoading">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+    </div>
+
+    <nav class="transparent z-depth-2" role="navigation" id="top">
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="mdi-action-home blue-text   infinite pulse" ></i></a>
+            <ul class="right hide-on-med-and-down">
+
+                <li class="red center waves-effect waves-light"><a class="black-text" href="about.html">About</a>
+                </li>
+                <li class="orange center waves-effect waves-light"><a class="black-text" href="projects.html">Projects</a>
+                </li>
+                <!---         <li class="deep-orange lighten-1 center"><a class="black-text" href="Gallery.html">Gallery</a>
+                </li> -->
+                <li class="yellow darken-2 center waves-effect waves-light"><a class="black-text" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav black">
+                <li class="blue center"><a class="black-text" href="index.html">Home</a>
+                </li>
+                <li class="red center"><a href="about.html">About</a>
+                </li>
+                <li class="orange  center"><a href="projects.html">Projects</a>
+                </li>
+                <!--       <li class="deep-orange lighten-1 center"><a href="Gallery.html">Gallery</a>
+                </li> -->
+                <li class="yellow darken-2 center"><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </nav>
+
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <div class="row">
+                <h1 class="header center   bounceInLeft">Projects</h1>
+        <h2 class="header center red-text   bounceInRight">More projects will be uploaded over time</h2>
+
+
+
+
+                <div class="col s12 m6 l4">
+                    <div class="card center transparent">
+                        <span class="card-title blue-text ">Google Chrome Extension</span>
+                        <div class="card-image">
+                            <img src="img/Screen%20Shot%202015-05-08%20at%2011.33.12%20AM.png" class="  fadeInDown">
+
+                        </div>
+                        <div class="card-content">
+                            <p class="white-text">My first Google Chrome Extension. It's called InstaHusky, check it out!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://chrome.google.com/webstore/detail/instahusky/koalkbdkgnkgdahnnjkjnieoaoeckndl" target="_blank">Click me!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card transparent center">
+                        <span class="card-title blue-text">Personal Website</span>
+                        <div class="card-image">
+                            <img src="img/Screen%20Shot%202015-05-08%20at%2011.30.14%20AM.png" class=" ">
+
+                        </div>
+                        <div class="card-content">
+                            <p class="white-text">This site you are currently on, yep, this is one of my ongoing projects.
+                                <br>
+                                <br>I look to update this site regularly with pictures, projects, contact info, etc.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card center transparent">
+                        <span class="card-title blue-text ">Google Chrome Theme</span>
+                        <div class="card-image">
+                            <img src="1280x800Screenshot.png" class="  fadeInDown">
+
+                        </div>
+                        <div class="card-content">
+                            <p class="white-text">A Google Chrome Theme for all tennis fans!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://chrome.google.com/webstore/detail/tennis-ball/aokjgndhbenbfijfenmffllpbfafcffk" target="_blank">Click me!</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section">
+
+    </div>
+
+    <footer class="page-footer transparent">
+        <div class="container center">
+            <div class="row">
+
+                <h5 class="white-text">Updated: 11.25.15</h5>
+
+            </div>
+        </div>
+        <div class="footer-copyright transparent center">
+            <a href="#top" id="bottom">
+                <i class="large mdi-navigation-expand-less blue-text center   infinite pulse"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <!--jquery scrollto-->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-62394102-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        $(window).load(function () {
+
+            $('#dvLoading').fadeOut(3000);
+
+        });
+    </script>
+
+</body>
+
+</html>

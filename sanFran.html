@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>San Fran Trip</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <link href="css/lightbox.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="dvLoading">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+    </div>
+
+    <nav class="brown" role="navigation" id="top">
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="mdi-action-home blue-text" ></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="purple lighten-3 center"><a class="black-text" href="about.html">About</a>
+                </li>
+                <li class="yellow center"><a class="black-text" href="projects.html">Projects</a>
+                </li>
+                <li class="deep-orange lighten-1 center"><a class="black-text" href="Gallery.html">Gallery</a>
+                </li>
+                <li class="green accent-3 center"><a class="black-text" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav black">
+                <li class="blue lighten-3 center"><a class="black-text" href="index.html">Home</a>
+                </li>
+                <li class="purple lighten-3 center"><a href="about.html">About</a>
+                </li>
+                <li class="yellow  center"><a href="projects.html">Projects</a>
+                </li>
+                <li class="deep-orange lighten-1 center"><a href="Gallery.html">Gallery</a>
+                </li>
+                <li class="green accent-3 center"><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </nav>
+
+    <div id="gallery">
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+                <div class="row">
+                    <h1 class="header center   bounceInLeft">San Francisco Trip</h1>
+
+
+
+
+
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image responsive">
+                                <img src="img/IMG_5558_1024.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image responsive">
+                                <img src="img/IMG_5558_1024.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="page-footer brown">
+        <div class="container center">
+            <div class="row">
+
+                <h5 class="white-text">Updated: 11.25.15</h5>
+
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-3 center">
+            <a href="#top" id="bottom">
+                <i class="large mdi-navigation-expand-less white-text center   infinite pulse"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <!--jquery scrollto-->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-62394102-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+    <script>
+        $(window).load(function () {
+
+            $('#dvLoading').fadeOut(3000);
+
+        });
+    </script>
+</body>
+
+</html>

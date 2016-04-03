@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Home</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!--jquery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+</head>
+
+<body id="homeBack">
+
+    <div id="dvLoading">
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
+    </div>
+
+    <nav class="transparent  z-depth-2" role="navigation" id="top">
+        <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><i class="mdi-action-home blue-text   infinite pulse" ></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="red  center waves-effect waves-light"><a class="black-text" href="about.html">About</a>
+                </li>
+                <li class="orange center waves-effect waves-light"><a class="black-text" href="projects.html">Projects</a>
+                </li>
+                <!--    <li class="deep-orange lighten-1 center"><a class="black-text" href="Gallery.html">Gallery</a>
+                </li> -->
+                <li class="yellow darken-2 center waves-effect waves-light"><a class="black-text" href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav black">
+                <li class="red center "><a href="about.html">About</a>
+                </li>
+                <li class="orange center"><a href="projects.html">Projects</a>
+                </li>
+                <!--    <li class="deep-orange lighten-1 center"><a href="Gallery.html">Gallery</a>
+                </li> -->
+                <li class="yellow darken-2 center"><a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container center">
+            <br>
+
+            <h1 class="header center green-text text-accent-3">Bobby McDonald</h1>
+            <div class="row center">
+                <h5 class="header col s12">Welcome to my personal website!</h5>
+            </div>
+            <div class="row center">
+                <div>
+                    <img class="responsive-img   rubberBand" src="img/homeImg.jpg">
+                </div>
+            </div>
+            <br>
+
+        </div>
+    </div>
+
+    <div class="center container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="transparent">
+                        <span class="white-text"><h4>Thank you for visiting my site!  This website will offer a little insight into who I am, what I enjoy doing, some projects I am currently working on, and how to contact me.  </h4>
+          </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="transparent">
+                        <span class="grey-text"><h6>Built On: HTML5 | <a class="grey-text" href="http://materializecss.com" target="_blank">Materialize.css</a> | jQuery | CSS3</h6>  
+          </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer class="page-footer transparent ">
+        <div class="container center">
+            <div class="row">
+
+                <h5 class="white-text">Updated: 11.25.15</h5>
+
+            </div>
+        </div>
+        <div class="footer-copyright transparent ">
+            <div class="container center">
+
+
+                <a href="#top" id="bottom">
+                    <i class="large mdi-navigation-expand-less blue-text center"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <!--jquery scrollto-->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-62394102-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <scrip>
+        <script>
+            $(window).load(function () {
+
+                $('#dvLoading').fadeOut(3000);
+
+            });
+        </script>
+
+
+    </scrip>
+
+</body>
+
+</html>
